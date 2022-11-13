@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <ScenarioDef>
+        <defName>Turn_Scenario_LostCaretakers</defName>
+        <label>Lost Caretakers</label>
+        <description>Your sacred groves were razed by outsiders. You escaped with only a handful of gauranlen seeds. From these, a new forest can grow.</description>
+        <scenario>
+            <summary>Five lost gaurankind and a handful of seeds. Difficult.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PlayerTribe</factionDef>
+            </playerFaction>
+
+            <parts>
+
+                <!-- Config pages -->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+                    <def>ConfigurePawnsXenotypes</def>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                    <!-- Why? -->
+                    <!-- <leftBehindPawnKind>Turn_PawnKind_TribespersonGaurankind</leftBehindPawnKind> -->
+                    <customSummary>Start with five gaurankind of any age.</customSummary>
+                    <overrideKinds>
+                        <li>
+                            <xenotype>Turn_XenoType_Gaurankind</xenotype>
+                            <pawnKind>Turn_PawnKind_TribespersonGaurankind</pawnKind>
+                        </li>
+                    </overrideKinds>
+                    <xenotypeCounts>
+                        <li>
+                            <xenotype>Turn_XenoType_Gaurankind</xenotype>
+                            <count>5</count>
+                            <description>gaurankind</description>
+                            <requiredAtStart>true</requiredAtStart>
+                            <allowedDevelopmentalStages>Adult, Child, Baby</allowedDevelopmentalStages>
+                        </li>
+                    </xenotypeCounts>
+                </li>
+
+                <!-- Player starting stuff spawn method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>Standing</method>
+                </li>
+
+                <!-- Player starting things -->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>GauranlenSeed</thingDef>
+                    <count>3</count>
+                </li>
+
+                <!-- Game start dialog -->
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>The vile machine worshippers raided your sacred groves with their impenetrable armor and deadly thundersticks. They pillaged your home and laid waste to your forests.\n\nThe five of you managed to escape, carrying only a handful of sacred gauranlen seeds. You need nothing more. From these seeds, a new forest will grow. The nature spirits will provide the rest.</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+    <!--
+        TODO: Forced "vatgrown slave" backstory, if possible.
+    <ScenarioDef>
+        <defName>Turn_Scenario_MissingCargo</defName>
+        <label>Missing Cargo</label>
+        <description>Freshly decanted from your growth vats and crammed into a slave ship, you soon find youselves plummeting towards the surface of this rimworld. Can you survive without your master?\n\nNote: Your starting pawns are not well-suited for freedom. Some things, especially raids, will be more complicated than usual.</description>
+        <scenario>
+            <summary>Four purslaves with no master. Complicated.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PlayerTribe</factionDef>
+            </playerFaction>
+
+            <parts>
+
+            </parts>
+
+        </scenario>
+    </ScenarioDef>
+    -->
+
+</Defs>

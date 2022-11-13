@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <ScenarioDef>
+        <defName>Turn_Scenario_FallenNoble</defName>
+        <label>The Fallen Noble</label>
+        <description>You were once a great noble, until your every worldly possession was taken from you. You've escaped an attempt on your life, but are now stranded and alone.\n\nNote: Since you begin with a stuck-up noble and no possessions, this is an incredibly hard scenario to start out with.</description>
+        <scenario>
+            <summary>One noble regalid, and not much else.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PlayerColony</factionDef>
+            </playerFaction>
+            <parts>
+
+                <!-- Config pages -->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+                    <def>ConfigurePawnsXenotypes</def>
+                    <pawnChoiceCount>1</pawnChoiceCount>
+                    <!-- Why? -->
+                    <!-- <leftBehindPawnKind>Turn_PawnKind_NobleRegalid</leftBehindPawnKind> -->
+                    <customSummary>Start with one adult regalid.</customSummary>
+                    <overrideKinds>
+                        <li>
+                            <xenotype>Turn_XenoType_Regalid</xenotype>
+                            <pawnKind>Turn_PawnKind_NobleRegalid</pawnKind>
+                        </li>
+                    </overrideKinds>
+                    <xenotypeCounts>
+                        <li>
+                            <xenotype>Turn_XenoType_Regalid</xenotype>
+                            <count>1</count>
+                            <description>adult regalid</description>
+                            <requiredAtStart>true</requiredAtStart>
+                            <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+                        </li>
+                    </xenotypeCounts>
+                </li>
+
+                <!-- Player starting stuff spawn method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>Standing</method>
+                </li>
+
+                <!-- Player starting things -->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_MonoSword</thingDef>
+                </li>
+                
+                <!-- Scatter some things near player start -->
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>ShuttleCrashed</thingDef>
+                    <allowRoofed>True</allowRoofed>
+                </li>
+
+                <!-- Game start dialog -->
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>Being of royal blood, everything in your life was handed to you. It didn't take long for others to want what you had. Your contemporaries schemed against you, and you soon found yourself tricked, betrayed, and backstabbed all the way down to rock bottom. Your enemies took your every worldly possession, and you've narrowly escaped their attempt to take your life.\n\nWith a damaged shuttle and no place to go, you soon find yourself lost in the middle of nowhere. You carry nothing but your royal blood, and the clothes on your back. Will you climb your way back to the top? Or will you perish here, alone and forgotten?</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+</Defs>

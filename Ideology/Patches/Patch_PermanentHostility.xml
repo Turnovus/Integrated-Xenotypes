@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Patch>
+
+    <!-- If a faction has permanent enemies, but is friendly towards gentle tribes, then
+        make them friendly towards gaurankind tribes. -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/FactionDef/permanentEnemyToEveryoneExcept[li="TribeCivil"]</xpath>
+        <value>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Turn_Faction_TribeGaurankind</li>
+        </value>
+    </Operation>
+
+</Patch>
