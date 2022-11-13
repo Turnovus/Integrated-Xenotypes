@@ -3,7 +3,7 @@
     <identifier>IntegratedXenotypes</identifier>
     <version>1.0.0</version>
     <dependencies>
-		<li>Harmony</li>
+		<li>IntegratedGenes</li>
 	</dependencies>
     <loadAfter/>
     <suggests>
