@@ -10,6 +10,6 @@
         <li>2884115974</li> <!-- Integrated Genes -->
     </suggests>
     <showCrossPromotions>true</showCrossPromotions>
-    <manifestUri>https://raw.githubusercontent.com/Turnovus/Integrated-Genes/main/About/Manifest.xml</manifestUri>
+    <manifestUri>https://raw.githubusercontent.com/Turnovus/Integrated-Xenotypes/main/About/Manifest.xml</manifestUri>
     <downloadUri>https://github.com/Turnovus/Integrated-Xenotypes/releases/latest</downloadUri>
 </Manifest>
