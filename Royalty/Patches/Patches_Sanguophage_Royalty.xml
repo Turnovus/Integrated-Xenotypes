@@ -5,7 +5,9 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/XenotypeDef[defName="Sanguophage"]/doubleXenotypeChances</xpath>
         <value>
-            <Turn_XenoType_Regalid>0.03</Turn_XenoType_Regalid>
+            <!-- Not very common because the sanguophage xenotype downgrades most of the regalids' genes. -->
+            <!-- The result is a +10 efficiency pawn with very few redeeming factors. -->
+            <Turn_XenoType_Regalid>0.01</Turn_XenoType_Regalid>
         </value>
     </Operation>
 

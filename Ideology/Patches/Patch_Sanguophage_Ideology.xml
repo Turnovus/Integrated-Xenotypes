@@ -5,7 +5,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/XenotypeDef[defName="Sanguophage"]/doubleXenotypeChances</xpath>
         <value>
-            <Turn_XenoType_Gaurankind>0.005</Turn_XenoType_Gaurankind>
+            <Turn_XenoType_Gaurankind>0.01</Turn_XenoType_Gaurankind>
         </value>
     </Operation>
 

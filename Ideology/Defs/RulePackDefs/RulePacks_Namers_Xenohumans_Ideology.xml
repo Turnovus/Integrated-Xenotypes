@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <RulePackDef>
+        <defName>NamerTurnPersonGaurankind</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=7)->[gibberName] [gibberName]</li>
+                <li>r_name(p=2)->[gibberName] '[fruit]' [gibberName]</li>
+                <li>r_name->[fruit] [gibberName]</li>
+                <li>r_name->[Color] [fruit]</li>
+
+                <li>gibberName->[gibberStart]</li>
+                <li>gibberName(p=2)->[gibberStart][gibberPart]</li>
+                <li>gibberName->[gibberStart][gibberPart][gibberPart]</li>
+
+                <li>gibberStart(p=2)->[firstLetter][anyEnd]</li>
+                <li>gibberPart(p=4)->[continueLetter][anyEnd]</li>
+                <li>gibberPart(p=0.5)->[continueLetter][anyVow]</li>
+
+                <li>anyVow->[vowOh]</li>
+                <li>anyVow->[vowAh]</li>
+                <li>anyVow->[vowEw]</li>
+
+                <li>anyEnd->[ohEnd]</li>
+                <li>anyEnd->[ahEnd]</li>
+                <li>anyEnd->[ewEnd]</li>
+
+                <li>vowOh(p=2)->o</li>
+                <li>vowOh->oe</li>
+                <li>vowOh->oa</li>
+
+                <li>ohEnd(p=4)->[vowOh]b</li>
+                <li>ohEnd(p=4)->[vowOh]g</li>
+                <li>ohEnd(p=4)->[vowOh]h</li>
+                <li>ohEnd(p=4)->[vowOh]l</li>
+                <li>ohEnd(p=2)->[vowOh]t</li>
+                <li>ohEnd->[vowOh]sh</li>
+                <li>ohEnd->[vowOh]th</li>
+
+                <li>vowAh(p=4)->a</li>
+                <li>vowAh(p=4)->e</li>
+                <li>vowAh(p=4)->u</li>
+                <li>vowAh(p=2)->aa</li>
+                <li>vowAh->oh</li>
+
+                <li>ahEnd(p=4)->[vowAh]f</li>
+                <li>ahEnd(p=4)->[vowAh]g</li>
+                <li>ahEnd(p=4)->[vowAh]k</li>
+                <li>ahEnd(p=4)->[vowAh]l</li>
+                <li>ahEnd(p=4)->[vowAh]w</li>
+                <li>ahEnd(p=2)->[vowAh]sh</li>
+
+                <li>vowEw(p=4)->i</li>
+                <li>vowEw(p=4)->u</li>
+                <li>vowEw(p=4)->oo</li>
+                <li>vowEw(p=2)->ue</li>
+                <li>vowEw->ie</li>
+
+                <li>ewEnd(p=4)->[vowEw]g</li>
+                <li>ewEnd(p=4)->[vowEw]j</li>
+                <li>ewEnd(p=4)->[vowEw]l</li>
+                <li>ewEnd(p=4)->[vowEw]b</li>
+                <li>ewEnd(p=4)->[vowEw]p</li>
+                <li>ewEnd(p=3)->[vowEw]sh</li>
+                <li>ewEnd(p=2)->[vowEw][ewContinue]</li>
+
+                <li>ewContinue->b[vowAh]</li>
+                <li>ewContinue->l[vowAh]</li>
+                <li>ewContinue->p[vowAh]</li>
+
+            </rulesStrings>
+
+            <rulesFiles>
+                <li>fruit->Names/Gaurankind/Various_Fruit_OneOrTwoSyl</li>
+                <li>firstLetter->WordParts/Gaurankind/CapitalConsonants_StartsWord</li>
+                <li>continueLetter->WordParts/Gaurankind/Consonants_StartsWord</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>Turn_Purslave_RandomNumbers</defName>
+
+        <rulePack>
+            <rulesStrings>
+                <li>anyNumber->[numbersOnes]</li>
+                <li>anyNumber->[numbersTeens]</li>
+                <li>anyNumber->[numbersTens]</li>
+                <li>anyNumber(p=4)->[numbersTens]-[numbersOnes]</li>
+            </rulesStrings>
+            
+            <rulesFiles>
+                <li>numbersOnes->WordParts/Purslave/Numbers/Numbers_Ones</li>
+                <li>numbersTeens->WordParts/Purslave/Numbers/Numbers_Teens</li>
+                <li>numbersTens->WordParts/Purslave/Numbers/Numbers_Tens</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>NamerTurnPersonPurslave</defName>
+
+        <include>
+            <li>Turn_Purslave_RandomNumbers</li>
+        </include>
+
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=2)->[hateFilled] [slaveNoun]</li>
+                <li>r_name(p=4)->[slaveNoun] [anyNumber]</li>
+                <li>r_name(p=2)->[miserableAdj] [slaveNoun]</li>
+                <li>r_name->[miserableAdj] [anyNumber]</li>
+
+                <li>slaveNoun(p=2)->[servant]</li>
+                <li>slaveNoun->[dehuman]</li>
+
+                <li>hateFilled->[hatePrefix][hateSuffix]</li>
+
+            </rulesStrings>
+
+            <rulesFiles>
+                <li>servant->Names/Purslave/Person_Servant</li>
+                <li>dehuman->Names/Purslave/Person_Dehuman</li>
+                <li>miserableAdj->Names/Purslave/Adjective_Miserable</li>
+
+                <li>hatePrefix->WordParts/Purslave/Prefix_HateFilled</li>
+                <li>hateSuffix->WordParts/Purslave/Suffix_HateFilled</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

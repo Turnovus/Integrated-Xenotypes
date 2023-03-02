@@ -10,6 +10,8 @@
         <descriptionShort>Whether through genetic manipulation or occult phenomena, gaurankind have acquired a natural connection to gauranlen trees, and a peculiar physiology similar to that of dryads.</descriptionShort>
         <iconPath>UI/Icons/Xenotypes/Gaurankind</iconPath>
         <inheritable>true</inheritable>
+		<nameMaker>NamerTurnPersonGaurankind</nameMaker>
+    	<chanceToUseNameMaker>0.9</chanceToUseNameMaker>
         <genes>
             <li>Turn_Gene_PruningAccelerated</li>
 			<li>Turn_Gene_GauranlenNeed</li>
@@ -47,6 +49,9 @@
         <descriptionShort>Purslaves are carefully-crafted, perfected servants. They are the product of a millennium of artificial selection. They work tirelessly and unquestioningly, with a dependence on servitude.</descriptionShort>
         <iconPath>UI/Icons/Xenotypes/Purslave</iconPath>
         <inheritable>false</inheritable>
+		<combatPowerFactor>0.55</combatPowerFactor>
+		<nameMaker>NamerTurnPersonPurslave</nameMaker>
+    	<chanceToUseNameMaker>1</chanceToUseNameMaker>
 
         <genes>
 			<li>FacialRidges</li>
