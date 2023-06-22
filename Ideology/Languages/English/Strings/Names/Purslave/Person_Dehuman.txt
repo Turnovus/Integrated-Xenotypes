@@ -3,10 +3,15 @@ beast
 coward
 crawler
 creature
+creep
+demon
+detritus
 dirt
 filth
 freak
+imp
 meat
+mistake
 mutant
 odor
 pest
@@ -19,7 +24,9 @@ speck
 specimen
 spit
 squirt
+stain
 stench
+swine
 thing
 trash
 worm

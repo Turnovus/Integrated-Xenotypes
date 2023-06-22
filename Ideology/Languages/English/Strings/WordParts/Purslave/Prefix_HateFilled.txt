@@ -5,6 +5,7 @@ fear
 hate
 loathe
 mad
+mourn
 murder
 rage
 scorn
