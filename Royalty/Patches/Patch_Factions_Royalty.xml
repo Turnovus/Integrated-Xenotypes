@@ -17,7 +17,8 @@
         <xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
         <value>
             <!-- Pretty rare, regalids aren't commoners -->
-            <Turn_XenoType_Regalid>0.04</Turn_XenoType_Regalid>
+            <!-- (Still more prevelant than neanderthals, though) -->
+            <Turn_XenoType_Regalid>0.08</Turn_XenoType_Regalid>
         </value>
     </Operation>
 

@@ -6,6 +6,7 @@
         <label>gauranlen groves</label>
         <description>It is hard to say how long these strange, dryad-like people have been here. Their ancestors may have crashed here long ago, or they may have come here willingly to get away from the coreworlds. They seem more interested in tending their sacred groves than in engaging in conflict.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
         <canMakeRandomly>true</canMakeRandomly>
+        <factionNameMaker>NamerTurnFactionGaurankind</factionNameMaker>
         <requiredCountAtGameStart>0</requiredCountAtGameStart>
         <settlementGenerationWeight>1</settlementGenerationWeight>
         <colorSpectrum>
@@ -16,6 +17,13 @@
             <li>(1.0, 0.36, 0.2)</li>
         </colorSpectrum>
         <factionIconPath>World/WorldObjects/Expanding/GaurankindTribe</factionIconPath>
+
+        <structureMemeWeights Inherit="False">
+            <Structure_Animist>5</Structure_Animist>
+            <Structure_TheistEmbodied>2</Structure_TheistEmbodied>
+            <Structure_TheistAbstract>2</Structure_TheistAbstract>
+            <Structure_Archist>1</Structure_Archist>
+        </structureMemeWeights>
 
         <disallowedMemes>
             <li>Supremacist</li>

@@ -3,5 +3,8 @@
         <!-- <li>Common</li> -->
         <li IfModActive="Ludeon.RimWorld.Royalty">Royalty</li>
         <li IfModActive="Ludeon.RimWorld.Ideology">Ideology</li>
+
+        <!-- Third-party integrations -->
+        <li IfModActive="OskarPotocki.VFE.Empire">VFEEmpire</li>
     </v1.4>
 </loadFolders>

@@ -52,64 +52,63 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="Empire_Royal_Yeoman"]/xenotypeSet/xenotypeChances</xpath>
         <value>
-            <Turn_XenoType_Regalid>0.02</Turn_XenoType_Regalid>
+            <Turn_XenoType_Regalid>0.10</Turn_XenoType_Regalid>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="Empire_Royal_Acolyte"]/xenotypeSet/xenotypeChances</xpath>
         <value>
-            <Turn_XenoType_Regalid>0.04</Turn_XenoType_Regalid>
+            <Turn_XenoType_Regalid>0.15</Turn_XenoType_Regalid>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="Empire_Royal_Knight"]/xenotypeSet/xenotypeChances</xpath>
         <value>
-            <Turn_XenoType_Regalid>0.06</Turn_XenoType_Regalid>
+            <Turn_XenoType_Regalid>0.20</Turn_XenoType_Regalid>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="Empire_Royal_Praetor"]/xenotypeSet/xenotypeChances</xpath>
         <value>
-            <Turn_XenoType_Regalid>0.1</Turn_XenoType_Regalid>
+            <Turn_XenoType_Regalid>0.25</Turn_XenoType_Regalid>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="Empire_Royal_Baron"]/xenotypeSet/xenotypeChances</xpath>
         <value>
-            <Turn_XenoType_Regalid>0.12</Turn_XenoType_Regalid>
+            <Turn_XenoType_Regalid>0.30</Turn_XenoType_Regalid>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="Empire_Royal_Count"]/xenotypeSet/xenotypeChances</xpath>
         <value>
-            <Turn_XenoType_Regalid>0.15</Turn_XenoType_Regalid>
+            <Turn_XenoType_Regalid>0.35</Turn_XenoType_Regalid>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="Empire_Royal_Duke"]/xenotypeSet/xenotypeChances</xpath>
         <value>
-            <Turn_XenoType_Regalid>0.15</Turn_XenoType_Regalid>
+            <Turn_XenoType_Regalid>0.35</Turn_XenoType_Regalid>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="Empire_Royal_Consul"]/xenotypeSet/xenotypeChances</xpath>
         <value>
-            <!-- Less common here so that we don't crowd out sanguophages -->
-            <Turn_XenoType_Regalid>0.07</Turn_XenoType_Regalid>
+            <Turn_XenoType_Regalid>0.35</Turn_XenoType_Regalid>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/PawnKindDef[defName="Empire_Royal_Stellarch"]/xenotypeSet/xenotypeChances</xpath>
         <value>
-            <Turn_XenoType_Regalid>0.07</Turn_XenoType_Regalid>
+            <Turn_XenoType_Regalid>0.35</Turn_XenoType_Regalid>
         </value>
     </Operation>
 
@@ -117,7 +116,7 @@
         <xpath>Defs/PawnKindDef[defName="Empire_Royal_Bestower"]/xenotypeSet/xenotypeChances</xpath>
         <value>
             <!-- This probably isn't lore friendly, but screw the lore. -->
-            <Turn_XenoType_Regalid>0.3</Turn_XenoType_Regalid>
+            <Turn_XenoType_Regalid>0.35</Turn_XenoType_Regalid>
         </value>
     </Operation>
 </Patch>
