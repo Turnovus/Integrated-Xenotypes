@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <RulePackDef>
+        <defName>NamerTurnPersonGaurankind</defName>
+        <include>
+            <li>TurnGaurankindWordUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=7)->[gibberName] [gibberName]</li>
+                <li>r_name(p=2)->[gibberName] '[fruit]' [gibberName]</li>
+                <li>r_name->[fruit] [gibberName]</li>
+                <li>r_name->[Color] [fruit]</li>
+            </rulesStrings>
+
+            <rulesFiles>
+                <li>fruit->Names/Gaurankind/Various_Fruit_OneOrTwoSyl</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>Turn_Purslave_RandomNumbers</defName>
+
+        <rulePack>
+            <rulesStrings>
+                <li>anyNumber->[numbersOnes]</li>
+                <li>anyNumber->[numbersTeens]</li>
+                <li>anyNumber->[numbersTens]</li>
+                <li>anyNumber(p=4)->[numbersTens]-[numbersOnes]</li>
+            </rulesStrings>
+            
+            <rulesFiles>
+                <li>numbersOnes->WordParts/Purslave/Numbers/Numbers_Ones</li>
+                <li>numbersTeens->WordParts/Purslave/Numbers/Numbers_Teens</li>
+                <li>numbersTens->WordParts/Purslave/Numbers/Numbers_Tens</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>NamerTurnPersonPurslave</defName>
+
+        <include>
+            <li>Turn_Purslave_RandomNumbers</li>
+        </include>
+
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=2)->[hateFilled] [slaveNoun]</li>
+                <li>r_name(p=4)->[slaveNoun] [anyNumber]</li>
+                <li>r_name(p=2)->[miserableAdj] [slaveNoun]</li>
+                <li>r_name->[miserableAdj] [anyNumber]</li>
+
+                <li>slaveNoun(p=2)->[servant]</li>
+                <li>slaveNoun->[dehuman]</li>
+
+                <li>hateFilled->[hatePrefix][hateSuffix]</li>
+
+            </rulesStrings>
+
+            <rulesFiles>
+                <li>servant->Names/Purslave/Person_Servant</li>
+                <li>dehuman->Names/Purslave/Person_Dehuman</li>
+                <li>miserableAdj->Names/Purslave/Adjective_Miserable</li>
+
+                <li>hatePrefix->WordParts/Purslave/Prefix_HateFilled</li>
+                <li>hateSuffix->WordParts/Purslave/Suffix_HateFilled</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

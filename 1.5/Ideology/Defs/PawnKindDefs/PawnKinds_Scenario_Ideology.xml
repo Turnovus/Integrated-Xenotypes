@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <PawnKindDef ParentName="BasePlayerPawnKind">
+        <defName>Turn_PawnKind_TribespersonGaurankind</defName>
+        <label>member</label>
+        <race>Human</race>
+        <defaultFactionType>PlayerTribe</defaultFactionType>
+        <chemicalAddictionChance>0.05</chemicalAddictionChance>
+        <apparelTags>
+            <li>Neolithic</li>
+        </apparelTags>
+        <apparelMoney>200~200</apparelMoney>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.02</techHediffsChance>
+        <initialResistanceRange>9~15</initialResistanceRange>
+
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Turn_XenoType_Gaurankind>1.0</Turn_XenoType_Gaurankind>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="BasePlayerPawnKind">
+        <defName>Turn_PawnKind_PlayerPurslave</defName>
+        <label>slave</label>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+        <chemicalAddictionChance>0.0</chemicalAddictionChance>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>350~500</apparelMoney>
+        <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+        <techHediffsChance>0.01</techHediffsChance>
+        <techHediffsMoney>10~400</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+        </techHediffsTags>
+        <techHediffsDisallowTags>
+            <li>PainCauser</li>
+        </techHediffsDisallowTags>
+        <initialResistanceRange>13~21</initialResistanceRange>
+        <humanPregnancyChance>0</humanPregnancyChance>
+    </PawnKindDef>
+
+</Defs>

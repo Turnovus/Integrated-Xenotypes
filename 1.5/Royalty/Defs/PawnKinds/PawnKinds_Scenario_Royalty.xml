@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <PawnKindDef ParentName="BasePlayerPawnKind">
+        <defName>Turn_PawnKind_NobleRegalid</defName>
+        <label>fallen noble</label>
+        <titleRequired>Knight</titleRequired>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+        <chemicalAddictionChance>0.09</chemicalAddictionChance>
+        <initialResistanceRange>13~21</initialResistanceRange>
+
+        <!-- From Empire_Royal_Knight + RoyalLowerBase -->
+        
+        <specificApparelRequirements>
+            <li>
+                <bodyPartGroup>UpperHead</bodyPartGroup>
+                <stuff>Synthread</stuff>
+            </li>
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <stuff>Synthread</stuff>
+            </li>
+            <li>
+                <bodyPartGroup>Legs</bodyPartGroup>
+                <stuff>Synthread</stuff>
+            </li>
+            
+            <li>
+                <bodyPartGroup>UpperHead</bodyPartGroup>
+                <requiredTag>RoyalTier3</requiredTag>
+                <alternateTagChoices>
+                    <li>
+                        <tag>Psychic</tag>
+                        <chance>0.3</chance>
+                    </li>
+                </alternateTagChoices>
+            </li>
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <requiredTag>RoyalTier2</requiredTag>
+            </li>
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <alternateTagChoices>
+                    <li>
+                        <tag>Cape</tag>
+                        <chance>0.3</chance>
+                    </li>
+                </alternateTagChoices>
+            </li>
+            <li>
+                <colorGenerator Class="ColorGenerator_Options">
+                    <options>
+                      <li>
+                        <only>(0.7, 0.7, 0.7)</only>
+                      </li>
+                      <li>
+                        <only>(0.5, 0.5, 0.5)</only>
+                      </li>
+                      <li>
+                        <only>(0.6, 0.6, 0.6)</only>
+                      </li>
+                      <li>
+                        <only>(104, 120, 119)</only> <!-- drab dark blue -->
+                      </li>
+                      <li>
+                        <only>(119, 145, 121)</only> <!-- drab light green -->
+                      </li>
+                      <li>
+                        <only>(106, 120, 104)</only> <!-- drab dark green -->
+                      </li>
+                      <li>
+                        <only>(140, 140, 119)</only> <!-- tan -->
+                      </li>
+                      <li>
+                        <only>(99, 87, 67)</only> <!-- muted brown -->
+                      </li>
+                      <li>
+                        <only>(128, 116, 84)</only> <!-- light brown -->
+                      </li>
+                      <li>
+                        <only>(107, 94, 64)</only> <!-- mid brown -->
+                      </li>
+                      <li>
+                        <only>(77, 66, 45)</only> <!-- dark brown -->
+                      </li>
+                    </options>
+                  </colorGenerator>
+            </li>
+        </specificApparelRequirements>
+        
+        <!-- Just put your friggin pants on already -->
+        <apparelRequired>
+            <li>Apparel_Pants</li>
+        </apparelRequired>
+
+        <techHediffsMoney>500~1000</techHediffsMoney>
+        <techHediffsChance>0.05</techHediffsChance>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Turn_XenoType_Regalid>1.0</Turn_XenoType_Regalid>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+</Defs>

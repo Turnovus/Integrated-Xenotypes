@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Royal_Archcount"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Regalid>0.35</Turn_XenoType_Regalid>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Royal_Marquess"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Regalid>0.35</Turn_XenoType_Regalid>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Royal_Archduke"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Regalid>0.35</Turn_XenoType_Regalid>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Royal_Magister"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Regalid>0.35</Turn_XenoType_Regalid>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Royal_Despot"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Regalid>0.35</Turn_XenoType_Regalid>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Royal_HighStellarch"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Regalid>0.40</Turn_XenoType_Regalid>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName="VFEE_Empire_Royal_Emperor"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Regalid>0.45</Turn_XenoType_Regalid>
+        </value>
+    </Operation>
+
+    <!-- Copy-paste template
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[defName=""]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Regalid>0.35</Turn_XenoType_Regalid>
+        </value>
+    </Operation>
+    -->
+
+</Patch>

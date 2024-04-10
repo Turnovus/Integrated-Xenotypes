@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <XenotypeDef>
+        <!-- These guys appear very rarely in baseliner tribal factions, but mostly keep to themselves -->
+        <defName>Turn_XenoType_Gaurankind</defName>
+        <label>gaurankind</label>
+        <description>The gaurankind are similar to dryads in more than appearance, as they boast a natural attunement with the psychic forces of gauranlen trees. Lost to history, the origins of the gaurankind are debated. Many say that they are descended from an ancient order of naturalist cultists, who modified their genetics to live in harmony with nature. Though the more superstitious belief is that they arose from a fusion between human souls and nature spirits.\n\nGaurankind are well-suited to rough living, but are emotionally dependent on the presence of gauranlen trees. Their differences from other xenotypes and adversity towards civilization tend to drive them towards distant, under-populated planets in the outer rim, where they may tend their forests in peace.</description>
+        <descriptionShort>Whether through genetic manipulation or occult phenomena, gaurankind have acquired a natural connection to gauranlen trees, and a peculiar physiology similar to that of dryads.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/Gaurankind</iconPath>
+        <inheritable>true</inheritable>
+		<nameMaker>NamerTurnPersonGaurankind</nameMaker>
+    	<chanceToUseNameMaker>0.9</chanceToUseNameMaker>
+        <genes>
+            <li>Turn_Gene_PruningAccelerated</li>
+			<li>Turn_Gene_GauranlenNeed</li>
+			<li>MoveSpeed_Slow</li>
+			<li>MinTemp_SmallDecrease</li>
+			<li>MaxTemp_SmallIncrease</li>
+
+			<li>Hair_BaldOnly</li>
+			<li>Ears_Human</li>
+			<li>Ears_Pointed</li>
+			<li>Turn_Gene_VoiceDryad</li>
+            <li>Turn_Gene_DryadFace</li>
+
+			<li>Skin_Green</li>
+			<li>Skin_DeepYellow</li>
+			<!--<li>Skin_PaleYellow</li>-->
+			<li>Skin_Orange</li>
+            <li>Turn_Gene_SkinBrightOrange</li>
+			<!--<li>Skin_PaleRed</li>-->
+
+			<li>RobustDigestion</li>
+
+			<li>AptitudeTerrible_Mining</li>
+			<li>AptitudeRemarkable_Plants</li>
+			<li>AptitudeTerrible_Social</li>
+			<li>AptitudePoor_Intellectual</li>
+
+			<li MayRequire="danielwedemeyer.geneticnaturalfocus">NaturalFocus</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef>
+        <!-- Purslaves are too weak to be guards or raiders. They mostly show up as slaves and refugees -->
+        <defName>Turn_XenoType_Purslave</defName>
+        <label>purslave</label>
+        <description>When mankind first understood the science of total genetic recombination, the use of this technology to create perfect servile xenotypes was inevitable. Purslaves are the result of a millennium of iterative design, artificial selection, and brutal, gruesome experimentation. They are born in factories, where growth vats churn them out in the tens of millions to be shipped off to distant coreworlds. They are tireless and unquestioning servants, knowing nothing but captivity. But they are also designed to be disposable, intended to be used, thrown away, and replaced. The trade of purslaves has produced many unbelievably wealthy "manufactured laborer firms".</description>
+        <descriptionShort>Purslaves are carefully-crafted, perfected servants. They are the product of a millennium of artificial selection. They work tirelessly and unquestioningly, with a dependence on servitude.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/Purslave</iconPath>
+        <inheritable>false</inheritable>
+		<combatPowerFactor>0.55</combatPowerFactor>
+		<nameMaker>NamerTurnPersonPurslave</nameMaker>
+    	<chanceToUseNameMaker>1</chanceToUseNameMaker>
+
+        <genes>
+			<li>FacialRidges</li>
+
+			<li>Mood_Sanguine</li>
+			<li>RobustDigestion</li>
+			<li>ElongatedFingers</li>
+			<li>Neversleep</li>
+			<li>Turn_Gene_AgressionSubmissive</li>
+
+			<li>Turn_Gene_Speechless</li>
+			<li>Beauty_VeryUgly</li>
+			<li>Pain_Extra</li>
+			<li>Turn_Gene_Terrified</li>
+			<li>UVSensitivity_Mild</li>
+			<li>Instability_Major</li>
+			<li>Sterile</li>
+			<li>Turn_Gene_MotivationHigh</li>
+
+			<li>AptitudeStrong_Mining</li>
+			<li>AptitudeStrong_Plants</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+    </XenotypeDef>
+
+</Defs>
