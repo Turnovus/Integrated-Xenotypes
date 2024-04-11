@@ -38,6 +38,8 @@
 			<li>AptitudeRemarkable_Plants</li>
 			<li>AptitudeTerrible_Social</li>
 			<li>AptitudePoor_Intellectual</li>
+
+			<li MayRequire="danielwedemeyer.geneticnaturalfocus">NaturalFocus</li>
         </genes>
     </XenotypeDef>
 
@@ -69,6 +71,7 @@
 			<li>UVSensitivity_Mild</li>
 			<li>Instability_Major</li>
 			<li>Sterile</li>
+			<li>Turn_Gene_MotivationHigh</li>
 
 			<li>AptitudeStrong_Mining</li>
 			<li>AptitudeStrong_Plants</li>

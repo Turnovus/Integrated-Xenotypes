@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Patch>
+
+    <!-- Disabled because the sanguophage xenotype shares or downgrades most of the regalids' genes. -->
+    <!-- The result is a +10 efficiency pawn with very few redeeming factors. -->
+    <!--
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/XenotypeDef[defName="Sanguophage"]/doubleXenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Regalid>0.01</Turn_XenoType_Regalid>
+        </value>
+    </Operation>
+    -->
+
+</Patch>

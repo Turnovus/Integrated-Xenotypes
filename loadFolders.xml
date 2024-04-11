@@ -1,10 +1,17 @@
 <loadFolders>
     <v1.4>
         <!-- <li>Common</li> -->
-        <li IfModActive="Ludeon.RimWorld.Royalty">Royalty</li>
-        <li IfModActive="Ludeon.RimWorld.Ideology">Ideology</li>
+        <li IfModActive="Ludeon.RimWorld.Royalty">1.4/Royalty</li>
+        <li IfModActive="Ludeon.RimWorld.Ideology">1.4/Ideology</li>
 
         <!-- Third-party integrations -->
-        <li IfModActive="OskarPotocki.VFE.Empire">VFEEmpire</li>
+        <li IfModActive="OskarPotocki.VFE.Empire">1.4/VFEEmpire</li>
     </v1.4>
+
+    <v1.5>
+        <li IfModActive="Ludeon.RimWorld.Royalty">1.5/Royalty</li>
+        <li IfModActive="Ludeon.RimWorld.Ideology">1.5/Ideology</li>
+
+        <li IfModActive="OskarPotocki.VFE.Empire">1.5/VFEEmpire</li>
+    </v1.5>
 </loadFolders>
