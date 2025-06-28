@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <XenotypeDef>
+        <defName>Turn_XenoType_Fleshmorph</defName>
+        <label>fleshmorph</label>
+        <description>TODO</description>
+        <descriptionShort>TODO</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/Regalid</iconPath>
+        <inheritable>true</inheritable>
+
+        <genes>
+            <li>Turn_Gene_FleshbeastMutating</li>
+            <li>Turn_Gene_FleshbeastRegeneration</li>
+            <li>Turn_Gene_FleshbeastBurster</li>
+
+            <li>PsychicAbility_Enhanced</li>
+
+            <li>Mood_Pessimist</li>
+
+            <li>FireWeakness</li>
+
+            <li>Neversleep</li>
+
+            <li>Beauty_VeryUgly</li>
+            <li>Turn_Gene_LowBeautyStandard</li>
+
+            <li>Turn_Gene_Eyes_Vacuous</li>
+            <li>Hair_BaldOnly</li>
+            <li>Beard_NoBeardOnly</li>
+            <li>Turn_Gene_SkinFleshColor</li>
+            
+            <li>DarkVision</li>
+            <li>Instability_Major</li>
+            <li>Turn_Gene_VariablePhenotype</li>
+        </genes>
+    </XenotypeDef>
+</Defs>
