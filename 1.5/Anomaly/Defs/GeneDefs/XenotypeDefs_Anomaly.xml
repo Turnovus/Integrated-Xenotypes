@@ -6,7 +6,7 @@
         <label>fleshmorph</label>
         <description>TODO</description>
         <descriptionShort>TODO</descriptionShort>
-        <iconPath>UI/Icons/Xenotypes/Regalid</iconPath>
+        <iconPath>UI/Icons/Xenotypes/Fleshmorph</iconPath>
         <inheritable>true</inheritable>
 
         <genes>
