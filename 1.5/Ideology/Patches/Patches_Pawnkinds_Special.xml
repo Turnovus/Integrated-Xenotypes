@@ -6,6 +6,7 @@
         <xpath>Defs/PawnKindDef[defName="Slave"]/xenotypeSet/xenotypeChances</xpath>
         <value>
             <Turn_XenoType_Purslave>0.17</Turn_XenoType_Purslave>
+            <Turn_XenoType_Fleshmorph MayRequire="Ludeon.RimWorld.Anomaly">0.008</Turn_XenoType_Fleshmorph>
         </value>
     </Operation>
 </Patch>

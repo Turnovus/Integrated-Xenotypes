@@ -23,6 +23,7 @@
             <Turn_XenoType_Gaurankind>0.01</Turn_XenoType_Gaurankind>
             <Turn_XenoType_Purslave>0.025</Turn_XenoType_Purslave>
             <Turn_XenoType_Regalid MayRequire="Ludeon.RimWorld.Royalty">0.007</Turn_XenoType_Regalid>
+            <Turn_XenoType_Fleshmorph MayRequire="Ludeon.RimWorld.Anomaly">0.008</Turn_XenoType_Fleshmorph>
         </value>
     </Operation>
 
@@ -33,6 +34,7 @@
             <Turn_XenoType_Gaurankind>0.01</Turn_XenoType_Gaurankind>
             <Turn_XenoType_Purslave>0.025</Turn_XenoType_Purslave>
             <Turn_XenoType_Regalid MayRequire="Ludeon.RimWorld.Royalty">0.007</Turn_XenoType_Regalid>
+            <Turn_XenoType_Fleshmorph MayRequire="Ludeon.RimWorld.Anomaly">0.008</Turn_XenoType_Fleshmorph>
         </value>
     </Operation>
 
