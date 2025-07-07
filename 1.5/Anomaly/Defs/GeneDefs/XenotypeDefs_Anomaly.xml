@@ -9,7 +9,6 @@
         <iconPath>UI/Icons/Xenotypes/Fleshmorph</iconPath>
         <inheritable>true</inheritable>
         <nameMaker>NamerTurnPersonFleshmorph</nameMaker>
-        <chanceToUseNameMaker>0.9</chanceToUseNameMaker>
 
         <genes>
             <li>Turn_Gene_FleshbeastMutating</li>
