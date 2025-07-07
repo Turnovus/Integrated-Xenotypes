@@ -9,6 +9,7 @@
             <Turn_XenoType_Gaurankind MayRequire="Ludeon.RimWorld.Ideology">0.01</Turn_XenoType_Gaurankind>
             <Turn_XenoType_Purslave MayRequire="Ludeon.RimWorld.Ideology">0.025</Turn_XenoType_Purslave>
             <Turn_XenoType_Regalid>0.007</Turn_XenoType_Regalid>
+            <Turn_XenoType_Fleshmorph MayRequire="Ludeon.RimWorld.Anomaly">0.008</Turn_XenoType_Fleshmorph>
         </value>
     </Operation>
 
