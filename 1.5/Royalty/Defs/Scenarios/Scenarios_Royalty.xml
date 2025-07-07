@@ -5,7 +5,7 @@
     <ScenarioDef>
         <defName>Turn_Scenario_FallenNoble</defName>
         <label>The Fallen Noble</label>
-        <description>You were once a great noble, until your every worldly possession was taken from you. You've escaped an attempt on your life, but are now stranded and alone.\n\nNote: Since you begin with a stuck-up noble and no possessions, this is an incredibly hard scenario to start out with.</description>
+        <description>You were once a great noble, until your every worldly possession was taken from you. You've escaped an attempt on your life, but are now stranded and alone.\n\nNote: Since you begin with a stuck-up noble and no possessions, this scenario can be tricky for newer players.</description>
         <scenario>
             <summary>One noble regalid, and not much else.</summary>
             <playerFaction>
