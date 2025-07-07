@@ -4,7 +4,7 @@
     <XenotypeDef>
         <defName>Turn_XenoType_Fleshmorph</defName>
         <label>fleshmorph</label>
-        <description>Being of unknown origin, it is unclear whether the creation of the fleshmorphs was the result of a failed experiment or a cruel joke. Given their resemblance to fleshbeasts, though, they are generally associated with the void.\n\nBeyond their monstrous form, fleshbeasts are afflicted by a sort of genetic chaos. Their anatomy is constantly shifting, and their genome is generally unstable.\n\nMost fleshbeasts are resentful of the wretched form they have been twisted into.</description>
+        <description>Being of unknown origin, it is unclear whether the creation of the fleshmorphs was the result of a failed experiment or a cruel joke. Given their resemblance to fleshbeasts, though, they are generally associated with the void.\n\nBeyond their monstrous form, fleshbeasts are afflicted by a sort of genetic chaos. Their anatomy is constantly shifting, and their genome is generally unstable.\n\nMost fleshmorphs are resentful of the wretched form they have been twisted into.</description>
         <descriptionShort>A human whose body has been twisted and warped beyond recognition. Fleshmorphs are known for their bizarre anatomy, unstable genome, and generally monstrous qualities.</descriptionShort>
         <iconPath>UI/Icons/Xenotypes/Fleshmorph</iconPath>
         <inheritable>true</inheritable>
