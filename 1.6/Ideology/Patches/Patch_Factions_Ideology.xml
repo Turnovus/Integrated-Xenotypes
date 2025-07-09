@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Patch>
+
+    <!-- example from pirate faction:
+    <xenotypeSet>
+      <xenotypeChances>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.1</Dirtmole>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
+        <Waster MayRequire="Ludeon.RimWorld.Biotech">0.025</Waster>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.025</Pigskin>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.025</Neanderthal>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0.025</Impid>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0.025</Genie>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.025</Yttakin>
+      </xenotypeChances>
+    </xenotypeSet> -->
+
+    <!-- Beggars -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="Beggars"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Gaurankind>0.01</Turn_XenoType_Gaurankind>
+            <Turn_XenoType_Purslave>0.025</Turn_XenoType_Purslave>
+            <Turn_XenoType_Regalid MayRequire="Ludeon.RimWorld.Royalty">0.007</Turn_XenoType_Regalid>
+            <Turn_XenoType_Fleshmorph MayRequire="Ludeon.RimWorld.Anomaly">0.008</Turn_XenoType_Fleshmorph>
+        </value>
+    </Operation>
+
+    <!-- Pilgrims -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="Pilgrims"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Gaurankind>0.01</Turn_XenoType_Gaurankind>
+            <Turn_XenoType_Purslave>0.025</Turn_XenoType_Purslave>
+            <Turn_XenoType_Regalid MayRequire="Ludeon.RimWorld.Royalty">0.007</Turn_XenoType_Regalid>
+            <Turn_XenoType_Fleshmorph MayRequire="Ludeon.RimWorld.Anomaly">0.008</Turn_XenoType_Fleshmorph>
+        </value>
+    </Operation>
+
+    <!-- Add gaurankind to human tribes -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef[defName="TribeCivil"]/xenotypeSet/xenotypeChances</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/FactionDef[defName="TribeCivil"]</xpath>
+            <value>
+                <xenotypeSet>
+                    <xenotypeChances>
+                        <Turn_XenoType_Gaurankind>0.005</Turn_XenoType_Gaurankind>
+                    </xenotypeChances>
+                </xenotypeSet>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/FactionDef[defName="TribeCivil"]/xenotypeSet/xenotypeChances</xpath>
+            <value>
+                <Turn_XenoType_Gaurankind>0.005</Turn_XenoType_Gaurankind>
+            </value>
+        </match>
+    </Operation>
+
+    <!-- We need to do these one at a time, since we're using PatchOperationConditional -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef[defName="TribeRough"]/xenotypeSet/xenotypeChances</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/FactionDef[defName="TribeRough"]</xpath>
+            <value>
+                <xenotypeSet>
+                    <xenotypeChances>
+                        <Turn_XenoType_Gaurankind>0.002</Turn_XenoType_Gaurankind>
+                    </xenotypeChances>
+                </xenotypeSet>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/FactionDef[defName="TribeRough"]/xenotypeSet/xenotypeChances</xpath>
+            <value>
+                <Turn_XenoType_Gaurankind>0.002</Turn_XenoType_Gaurankind>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef[defName="NudistTribe"]/xenotypeSet/xenotypeChances</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/FactionDef[defName="NudistTribe"]</xpath>
+            <value>
+                <xenotypeSet>
+                    <xenotypeChances>
+                        <Turn_XenoType_Gaurankind>0.004</Turn_XenoType_Gaurankind>
+                    </xenotypeChances>
+                </xenotypeSet>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/FactionDef[defName="NudistTribe"]/xenotypeSet/xenotypeChances</xpath>
+            <value>
+                <Turn_XenoType_Gaurankind>0.004</Turn_XenoType_Gaurankind>
+            </value>
+        </match>
+    </Operation>
+</Patch>

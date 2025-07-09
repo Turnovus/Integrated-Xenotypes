@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Patch>
+
+    <!-- Add our xenotypes to the refugee pool -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Gaurankind MayRequire="Ludeon.RimWorld.Ideology">0.01</Turn_XenoType_Gaurankind>
+            <Turn_XenoType_Purslave MayRequire="Ludeon.RimWorld.Ideology">0.025</Turn_XenoType_Purslave>
+            <Turn_XenoType_Regalid>0.007</Turn_XenoType_Regalid>
+            <Turn_XenoType_Fleshmorph MayRequire="Ludeon.RimWorld.Anomaly">0.008</Turn_XenoType_Fleshmorph>
+        </value>
+    </Operation>
+
+    <!-- Imperial Regalids -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <!-- Pretty rare, regalids aren't commoners -->
+            <!-- (Still more prevelant than neanderthals, though) -->
+            <Turn_XenoType_Regalid>0.08</Turn_XenoType_Regalid>
+        </value>
+    </Operation>
+
+    <!-- Dishonorable pirate regalids -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Regalid>0.01</Turn_XenoType_Regalid>
+        </value>
+    </Operation>
+    <!-- This faction has too many xenos for us to add our own safely
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Regalid>0.01</Turn_XenoType_Regalid>
+        </value>
+    </Operation>
+-->
+
+</Patch>

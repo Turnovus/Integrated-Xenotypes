@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    
+    <RulePackDef>
+        <defName>TurnFleshmorphWordUtility</defName>
+        
+        <rulePack>
+            <rulesStrings>
+                <li>fleshyName(p=4)->[fleshyStart][fleshyEnd]</li>
+                <li>fleshyName->[fleshyStart]-[fleshyStart][fleshyEnd]</li>
+                <li>fleshyName->[fleshyStart][fleshyEnd]-[fleshyEnd]</li>
+
+                <li>fleshyStart->[fleshyStartApostrophe][fleshyBit]</li>
+                <li>fleshyStart->[fleshyStartConsonants][fleshyStartVowel]</li>
+                
+                <li>fleshyEnd->[fleshyBit]</li>
+                
+                <li>fleshyStartApostrophe->[fleshyStartLetter]'</li>
+
+                <li>fleshyStartLetter(p=2)->d</li>
+                <li>fleshyStartLetter(p=4)->k</li>
+                <li>fleshyStartLetter->m</li>
+                <li>fleshyStartLetter->n</li>
+                <li>fleshyStartLetter->z</li>
+                
+                <li>fleshyBit->[fleshyBitStart][fleshyBitEnd]</li>
+                <li>fleshyBit->[fleshyBitEnd]</li>
+
+                <li>fleshyBitStart->k</li>
+                <li>fleshyBitStart->l</li>
+                <li>fleshyBitStart->h</li>
+                <li>fleshyBitStart->m</li>
+                <li>fleshyBitStart->t</li>
+                <li>fleshyBitStart->zr</li>
+                
+                <li>fleshyBitEnd->ak</li>
+                <li>fleshyBitEnd->ik</li>
+                <li>fleshyBitEnd->ar</li>
+                <li>fleshyBitEnd->ahn</li>
+                <li>fleshyBitEnd->ax</li>
+                
+                <li>fleshyStartConsonants->kr</li>
+                <li>fleshyStartConsonants->gr</li>
+                <li>fleshyStartConsonants->v</li>
+                <li>fleshyStartConsonants->d</li>
+
+                <li>fleshyStartVowel->a</li>
+                <li>fleshyStartVowel->i</li>
+                <li>fleshyStartVowel->o</li>
+                <li>fleshyStartVowel->u</li>
+                
+            </rulesStrings>
+        </rulePack>
+        
+    </RulePackDef>
+    
+    <RulePackDef>
+        <defName>NamerTurnPersonFleshmorph</defName>
+        
+        <include>
+            <li>TurnFleshmorphWordUtility</li>
+        </include>
+        
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[fleshyName] [fleshyName]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+    
+</Defs>

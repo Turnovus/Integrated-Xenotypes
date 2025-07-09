@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <XenotypeDef>
+        <defName>Turn_XenoType_Fleshmorph</defName>
+        <label>fleshmorph</label>
+        <description>Being of unknown origin, it is unclear whether the creation of the fleshmorphs was the result of a failed experiment or a cruel joke. Given their resemblance to fleshbeasts, though, they are generally associated with the void.\n\nBeyond their monstrous form, fleshbeasts are afflicted by a sort of genetic chaos. Their anatomy is constantly shifting, and their genome is generally unstable.\n\nMost fleshmorphs are resentful of the wretched form they have been twisted into.</description>
+        <descriptionShort>A human whose body has been twisted and warped beyond recognition. Fleshmorphs are known for their bizarre anatomy, unstable genome, and generally monstrous qualities.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/Fleshmorph</iconPath>
+        <inheritable>true</inheritable>
+        <nameMaker>NamerTurnPersonFleshmorph</nameMaker>
+
+        <genes>
+            <li>Turn_Gene_FleshbeastMutating</li>
+            <li>Turn_Gene_FleshbeastRegeneration</li>
+            <li>Turn_Gene_FleshbeastBurster</li>
+
+            <li>PsychicAbility_Enhanced</li>
+
+            <li>Mood_Pessimist</li>
+
+            <li>FireWeakness</li>
+
+            <li>Neversleep</li>
+
+            <li>Beauty_VeryUgly</li>
+            <li>Turn_Gene_LowBeautyStandard</li>
+
+            <li>Turn_Gene_Eyes_Vacuous</li>
+            <li>Hair_BaldOnly</li>
+            <li>Beard_NoBeardOnly</li>
+            <li>Turn_Gene_SkinFleshColor</li>
+            
+            <li>DarkVision</li>
+            <li>Instability_Major</li>
+            <li>Turn_Gene_VariablePhenotype</li>
+        </genes>
+    </XenotypeDef>
+</Defs>
