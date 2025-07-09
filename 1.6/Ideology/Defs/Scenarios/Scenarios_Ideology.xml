@@ -2,14 +2,13 @@
 
 <Defs>
 
-    <ScenarioDef>
+    <ScenarioDef ParentName="ScenarioBase">
         <defName>Turn_Scenario_LostCaretakers</defName>
         <label>Lost Caretakers</label>
         <description>Your sacred groves were razed by outsiders. You escaped with only a handful of gauranlen seeds. From these, a new forest can grow.</description>
         <scenario>
             <summary>Five lost gaurankind and a handful of seeds. Difficult.</summary>
             <playerFaction>
-                <def>PlayerFaction</def>
                 <factionDef>PlayerTribe</factionDef>
             </playerFaction>
 
