@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <RulePackDef>
+        <defName>NamerTurnFactionGaurankind</defName>
+        <include>
+            <li>TurnGaurankindWordUtility</li>
+        </include>
+
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[gibberName] [political_union_tribal]</li>
+                <li>r_name->The [gibberName] [political_union_tribal]</li>
+                <li>r_name->The [Color] [gibberName] [political_union_tribal]</li>
+                <li>r_name->[political_union_tribal] of [gibberName]</li>
+                <li>r_name->The [Color] [fruit] [gibberName]</li>
+                <li>r_name->The [gibberName] of the [TerrainFeature]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>political_union_tribal->Words/Nouns/PoliticalUnions_Tribal</li>
+                <li>fruit->Names/Gaurankind/Various_Fruit_OneOrTwoSyl</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

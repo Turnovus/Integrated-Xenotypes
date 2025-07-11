@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <!-- Add fleshmorphs to the horaxian pawnkinds -->
+    <!-- We don't want them to be too common, since the fleshburster gene will mess with raid
+    balancing. -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="HoraxianBase"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Fleshmorph>0.08</Turn_XenoType_Fleshmorph>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/PawnKindDef[@Name="RefugeeBase"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <Turn_XenoType_Gaurankind MayRequire="Ludeon.RimWorld.Ideology">0.01</Turn_XenoType_Gaurankind>
+            <Turn_XenoType_Purslave MayRequire="Ludeon.RimWorld.Ideology">0.025</Turn_XenoType_Purslave>
+            <Turn_XenoType_Regalid>0.007</Turn_XenoType_Regalid>
+        </value>
+    </Operation>
+</Patch>

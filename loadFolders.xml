@@ -15,4 +15,12 @@
 
         <li IfModActive="OskarPotocki.VFE.Empire">1.5/VFEEmpire</li>
     </v1.5>
+
+    <v1.6>
+        <li IfModActive="Ludeon.RimWorld.Royalty">1.6/Royalty</li>
+        <li IfModActive="Ludeon.RimWorld.Ideology">1.6/Ideology</li>
+        <li IfModActive="Ludeon.RimWorld.Anomaly">1.6/Anomaly</li>
+
+        <li IfModActive="OskarPotocki.VFE.Empire">1.6/VFEEmpire</li>
+    </v1.6>
 </loadFolders>
